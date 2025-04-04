@@ -1,50 +1,48 @@
-# Welcome to your Expo app 👋
+# Sample Savings Platform List
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Project Setup
 
-## Get started
+In order to get everything up and running, please follow these steps:
 
-1. Install dependencies
+1. Clone this repo
+2. Install dependencies
 
    ```bash
    npm install
    ```
-
-2. Start the app
+3. Start the app for ios
 
    ```bash
-    npx expo start
+    npm run ios
+   ```
+4. Start the app for android
+
+   ```bash
+    npm run android
    ```
 
-In the output, you'll find options to open the app in a
+## The Task
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+You've been given a PR to review by a junior engineer. The PR is a POC application for showing a list of saving accounts. It does not currently connect with any APIs.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Out of scope (you can assume these things are ok)
 
-## Get a fresh project
+- How the build / typescript / prettier is configured
 
-When you're ready, run:
+### Requirements
 
-```bash
-npm run reset-project
-```
+The requirements for the final application are given below. For each one, can you find an example of where the requirement has been met, and an example of where it hasn't?
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- TypeScript should be used to ensure data integrity.
+- Basic accessibility standards should be met.
+- The UI should adapt to the screen safe area.
+- The app should be responsive and highly performant, there is an excessive number of re-renders. How do we fix this?
 
-## Learn more
+### Additionally
 
-To learn more about developing your project with Expo, look at the following resources:
+- The app will connect to an api to get the list of savings, and like it does now it will poll regularly to ensure it has the latest savings. How should the data be managed once this is in place? Are there any alternatives to polling and what would be the benefits?
+- We want to show the bank details on a separate screen, what would be the best way to get this information and display it on the page?
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Finally
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+What other problems / opportunities for improvement can you spot?

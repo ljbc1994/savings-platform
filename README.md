@@ -35,7 +35,7 @@ The requirements for the final application are given below. For each one, can yo
 
 - TypeScript should be used to ensure data integrity.
 - Basic accessibility standards should be met.
-- The UI should adapt to the screen safe area.
+- The UI should display within the screen.
 - The app should be responsive and highly performant, there is an excessive number of re-renders. How do we fix this?
 
 ### Additionally
